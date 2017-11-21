@@ -1,0 +1,39 @@
+enp2s0    Link encap:Ethernet  HWaddr 94:c6:91:0e:47:0b  
+          inet addr:10.108.204.28  Bcast:10.108.207.255  Mask:255.255.252.0
+          inet6 addr: fe80::dbbb:62b7:3664:bfa/64 Scope:Link
+          inet6 addr: 2001:da8:215:833:dcfa:a3a0:92b3:10f1/64 Scope:Global
+          inet6 addr: 2001:da8:215:833:78cc:ea8f:dd27:8ce3/64 Scope:Global
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:38166 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:25272 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:38289863 (38.2 MB)  TX bytes:2548691 (2.5 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:2536 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:2536 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:239193 (239.1 KB)  TX bytes:239193 (239.1 KB)
+
+vmnet1    Link encap:Ethernet  HWaddr 00:50:56:c0:00:01  
+          inet addr:172.16.75.1  Bcast:172.16.75.255  Mask:255.255.255.0
+          inet6 addr: fe80::250:56ff:fec0:1/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:88 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+vmnet8    Link encap:Ethernet  HWaddr 00:50:56:c0:00:08  
+          inet addr:172.16.208.1  Bcast:172.16.208.255  Mask:255.255.255.0
+          inet6 addr: fe80::250:56ff:fec0:8/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:87 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+ifconfig

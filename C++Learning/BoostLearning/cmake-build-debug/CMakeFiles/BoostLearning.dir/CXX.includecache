@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wenshao/StudyNote/C++Learning/BoostLearning/main.cpp
+iostream
+-
+ctime
+-
+string
+-
+boost/array.hpp
+-
+boost/asio.hpp
+-
+sstream
+-
+fstream
+-
+boost/shared_ptr.hpp
+-
+boost/bind.hpp
+-
+boost/thread.hpp
+-
+algorithm
+-
+functional
+-
+

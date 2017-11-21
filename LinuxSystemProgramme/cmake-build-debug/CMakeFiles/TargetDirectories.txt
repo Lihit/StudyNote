@@ -1,0 +1,3 @@
+/home/wenshao/StudyNote/LinuxSystemProgramme/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/wenshao/StudyNote/LinuxSystemProgramme/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/wenshao/StudyNote/LinuxSystemProgramme/cmake-build-debug/CMakeFiles/LinuxSystemProgramme.dir
