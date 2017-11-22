@@ -9,10 +9,12 @@
 /home/wenshao/StudyNote/C++Learning/CppLearning/main.cpp
 iostream
 -
-sstream
+fstream
+-
+vector
 -
 string
 -
-algorithm
+cstring
 -
 
