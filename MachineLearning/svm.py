@@ -2,6 +2,7 @@
 from sklearn import svm
 import numpy as np
 import matplotlib.pyplot as plt
+import pylab as pl
 
 
 def main1():
@@ -140,5 +141,45 @@ def main5():
     plt.show()
 
 
+def main6():
+    x = [[2, 0], [1, 1], [2, 3]]
+    y = [0, 0, 1]
+    clf = svm.SVC(kernel='linear')
+    clf.fit(x, y)
+    print(clf)
+    print(clf.support_vectors_)
+    print(clf.support_)
+    print(clf.n_support_)
+
+
+def main7():
+    np.random.seed(0)
+    x = np.r_[np.random.randn(20, 2) - [2, 2], np.random.randn(20, 2) + [2, 2]]
+    y = [0] * 20 + [1] * 20
+    clf = svm.SVC(kernel='linear')
+    clf.fit(x, y)
+
+    w = clf.coef_[0]
+    a = -w[0] / w[1]
+    xx = np.linspace(-5, 5)
+    yy = a * xx - (clf.intercept_[0]) / w[1]
+    print(yy)
+    b1 = clf.support_vectors_[0]
+    yy_down = a * xx + (b1[1] - a * b1[0])
+    b2 = clf.support_vectors_[-1]
+    yy_up = a * xx + (b2[1] - a * b2[0])
+
+    print(yy_down)
+    print(yy_up)
+    pl.plot(xx, yy, 'r-')
+    pl.plot(xx, yy_down, 'r--')
+    pl.plot(xx, yy_up, 'r--')
+
+    pl.scatter(clf.support_vectors_[:, 0], clf.support_vectors_[:, 1], s=80)
+    pl.scatter(x[:, 0], x[:, 1], c=y, cmap=pl.cm.Paired)
+    pl.axis('tight')
+    pl.show()
+
+
 if __name__ == '__main__':
-    main5()
+    main7()
