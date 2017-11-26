@@ -1,132 +1,80 @@
 #include <iostream>
-#include <fstream>
-#include <vector>
-#include <string>
-#include <cstring>
-
 using namespace std;
 
-/**
- * 文件的写入
- */
-void main1() {
-    ofstream fout;
-    fout.open("../test.txt");
-    fout << "hello world";
-    fout.close();
+void main1(){
+    int num=10;
+    int *p=new int;
+    *p=10;
+    cout<<*p<<" "<<p<<endl;
+    delete p;
+    //delete p; 只能释放一次
+    cout<<*p<<" "<<p<<endl;
 }
-
-/**
- * 文件读取
- */
-void main2() {
-    ifstream fin("../test.txt");
-    char str[50] = {0};
-    fin.getline(str, 50);
-    cout << str;
-    fin.close();
-}
-
-/*
- * fstream
- */
-void main3() {
-    fstream fout("../test.txt", ios::in | ios::out | ios::app);
-    fout << "hello world";
-    //fout.seekg(ios::beg);
-    fout << "hello world11";
-    fout.close();
-}
-
-/*
- * 循环读取文件
- */
-void main4() {
-    vector<string> ret;
-    ifstream fin("../test.txt");
-    char tmp[1024] = {0};
-    while (true) {
-        fin.getline(tmp, 1024);
-        if (strlen(tmp) == 0) break;
-        ret.push_back(string(tmp));
+void main2(){
+    int *p=new int[10];
+    cout<<p<<endl;
+    for(int i=0;i<10;i++){
+        p[i]=i+1;
+        cout<<p[i]<<endl;
     }
-    fin.close();
-    for (int i = 0; i < ret.size(); i++) {
-        cout << ret[i] << endl;
-    }
+    delete []p;//删除数组的空间
+    cout<<p<<endl;
 }
 
-void main5() {
-    ifstream fin("../test.txt");
-    ofstream fout("../newtest.txt");
-    if (!fin || !fout) {
-        cout << "文件打开失败" << endl;
-        return;
+class test{
+public:
+    static int count;
+    int *p;
+    int length;
+public:
+    test(){
+        cout<<"test create~"<<endl;
     }
-    char ch = 0;
-    while (fin.get(ch)) {
-        fout.put(ch);
+    ~test(){
+        cout<<"test destroy~"<<endl;
     }
-    fin.close();
-    fout.close();
-    cout<<"copy完成"<<endl;
-}
-
-void main6(){
-    char str[80]={0};
-    cin.getline(str,80);//逐行读取
-    cout<<str<<endl;
-    cin.getline(str,80);//逐行读取
-    cout<<str<<endl;
-    cin.get(str,40,'n');//一次性读取，以ｘ结束
-    cout<<str<<endl;
-    cin.getline(str,80);//逐行读取
-
-}
-void main7(){
-    char str[80];
-    cin.getline(str,80,',');//逐行读取
-    cout<<str<<endl;
-    cin.getline(str,80,',');//逐行读取
-    cout<<str<<endl;
-    cin.getline(str,80);//逐行读取
-    cout<<str<<endl;
-}
-//在ｃｐｐ中可以直接赋值
-struct MyStruct{
-    //char str[30];
-    char *p="北京是帝都";
-    int num=20;
-    double db=1.2;
-    char ch='a';
+    static void *operator new(size_t size){
+        count++;
+        cout<<"test1 create~"<<endl;
+        test *ttmp=::new test;//劫持
+        return ttmp;
+    }
+    static void operator delete(void *p){
+        count--;
+        cout<<"test1 destroy~"<<endl;
+        ::delete p;
+    }
 };
-void main8(){
-    ofstream fout("../wenben.txt",ios::out);
-    ifstream fin("../wenben.txt");
-    MyStruct my1;
-    fout<<my1.p<<my1.num<<my1.db<<my1.ch<<endl;
-    char str[100]={0};
-    fin.getline(str,100,0);
-    cout<<str<<endl;
-    fin.close();
-    fout.close();
+
+int test::count=0;
+void main3(){
+    test *t=new test[10];
+    delete []t;
 }
+
 /**
- * 文本和二进制
+ * 创建二维数组
  */
-void main9(){
-    MyStruct my1;
-    my1.p="hello world";
-    ofstream fout("../bin.txt",ios::binary);
-    fout.write((char*)&my1,sizeof(my1));
-    fout.close();
-    ifstream fin("../bin.txt",ios::binary);
-    MyStruct newMys;
-    fin.read((char*)&newMys,sizeof(newMys));
-    cout<<newMys.p<<endl;
-    fin.close();
+void main4(){
+    int *p=new int[66];//new只能分配线性
+    int(*px)[10]=(int(*)[10])p;
+    int data=0;
+    for(int i=0;i<6;i++){
+        for(int j=0;j<10;j++){
+            px[i][j]=data++;
+            cout<<px[i][j]<<endl;
+        }
+    }
 }
-int main() {
-    main9();
+
+void main5(){
+    test *t1=new test;
+    test *t2=new test;
+    test *t3=new test;
+    delete t1;
+    cout<<test::count<<endl;
+}
+int main(){
+    main5();
     return 0;
 }

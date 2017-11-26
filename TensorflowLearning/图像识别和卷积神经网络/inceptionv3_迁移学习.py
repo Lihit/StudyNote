@@ -86,26 +86,23 @@ def run_bottleneck_on_image(sess, image_data, image_data_tensor, bottle_tensor):
 
 
 def get_or_create_bottleneck(sess, image_lists, label_name, index, category, jpeg_data_tensor, bottleneck_tensor):
-    # label_lists = image_lists[label_name]
-    # sub_dir = label_lists['dir']
-    # sub_dir_path = os.path.join(CACHE_DIR, sub_dir)
-    # if not os.path.exists(sub_dir_path):
-    #     os.makedirs(sub_dir_path)
-    # bottleneck_path = get_bottleneck_path(image_lists, label_name, index, category)
-    # if not os.path.exists(bottleneck_path):
-    #     image_path = get_image_path(image_lists, INPUT_DATA, label_name, index, category)
-    #     image_data = gfile.FastGFile(image_path, 'rb').read()
-    #     bottleneck_values = run_bottleneck_on_image(sess, image_data, jpeg_data_tensor, bottleneck_tensor)
-    #     bottleneck_string = ','.join(str(x) for x in bottleneck_values)
-    #     with open(bottleneck_path, 'w') as bottleneck_file:
-    #         bottleneck_file.write(bottleneck_string)
-    # else:
-    #     with open(bottleneck_path, 'r') as bottleneck_file:
-    #         bottleneck_string = bottleneck_file.read()
-    #     bottleneck_values = [float(x) for x in bottleneck_string.split(',')]
-    image_path = get_image_path(image_lists, INPUT_DATA, label_name, index, category)
-    image_data = gfile.FastGFile(image_path, 'rb').read()
-    bottleneck_values = run_bottleneck_on_image(sess, image_data, jpeg_data_tensor, bottleneck_tensor)
+    label_lists = image_lists[label_name]
+    sub_dir = label_lists['dir']
+    sub_dir_path = os.path.join(CACHE_DIR, sub_dir)
+    if not os.path.exists(sub_dir_path):
+        os.makedirs(sub_dir_path)
+    bottleneck_path = get_bottleneck_path(image_lists, label_name, index, category)
+    if not os.path.exists(bottleneck_path):
+        image_path = get_image_path(image_lists, INPUT_DATA, label_name, index, category)
+        image_data = gfile.FastGFile(image_path, 'rb').read()
+        bottleneck_values = run_bottleneck_on_image(sess, image_data, jpeg_data_tensor, bottleneck_tensor)
+        bottleneck_string = ','.join(str(x) for x in bottleneck_values)
+        with open(bottleneck_path, 'w') as bottleneck_file:
+            bottleneck_file.write(bottleneck_string)
+    else:
+        with open(bottleneck_path, 'r') as bottleneck_file:
+            bottleneck_string = bottleneck_file.read()
+        bottleneck_values = [float(x) for x in bottleneck_string.split(',')]
     return bottleneck_values
 
 
