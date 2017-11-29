@@ -7,26 +7,12 @@
 #IncludeRegexTransform: 
 
 /home/wenshao/StudyNote/LinuxSystemProgramme/main.cpp
-stdlib.h
--
 stdio.h
 -
-string.h
--
-sys/types.h
--
-sys/stat.h
--
-sys/ioctl.h
--
-fcntl.h
+stdlib.h
 -
 unistd.h
 -
-errno.h
--
-sys/stat.h
--
-dirent.h
+sys/types.h
 -
 

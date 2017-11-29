@@ -1,145 +1,52 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <sys/ioctl.h>
-#include <fcntl.h>
+#include <stdlib.h>
 #include <unistd.h>
-#include <errno.h>
-#include <sys/stat.h>
-#include <dirent.h>
-
-/**
- * stat
- * 查看文件的状态
- * int stat(const char *path, struct stat *buf);
- *int fstat(int fd, struct stat *buf);
- *int lstat(const char *path, struct stat *buf);
- */
+#include <sys/types.h>
 void main1(){
-    struct stat buf;
-    int ret=stat("../touch.txt",&buf);
-    printf("%d",buf.st_uid);
-    time_t t=buf.st_ctime;
-    printf("%f",t);
+    extern char **environ;
+    int i;
+    for(i=0;environ[i]!=NULL;i++){
+        printf("%s\n",environ[i]);
+    }
+    printf("PATH=%s\n", getenv("PATH"));
+    setenv("PATH", "hello", 1);
+    printf("PATH=%s\n", getenv("PATH"));
 }
-
-/**
- * access
- * chmod
- * chown
- */
 void main2(){
-    int ret=access("../touch1.txt",F_OK);
-    if(ret<0){
-        printf("hello");
+    pid_t pid;
+    char *message;
+    int n;
+    pid=fork();
+    if(pid<0){
+        perror("fork failed!");
+        exit(1);
     }
-    printf("%d",ret);
-
-   /* int chmod(const char *path, mode_t mode);
-    int fchmod(int fd, mode_t mode);*/
-    int ret1=chmod("../touch.txt",0666);
-    if(ret1<0){
-        printf("erro chmod");
+    if(pid==0){
+        message="This is the Child";
+        n=6;
+    }else{
+        message="This is the Parent";
+        n=3;
     }
-    /*int chown(const char *path, uid_t owner, gid_t group);
-    int fchown(int fd, uid_t owner, gid_t group);
-    int lchown(const char *path, uid_t owner, gid_t group);*/
+    for(;n>0;n--){
+        printf("%s:%d\n",message,getpid());
+        printf("%d\n",getuid());
+        printf("%d\n",getgid());
+        sleep(1);
+    }
 }
 
-/**
- * rename
- * getcwd
- */
 void main3(){
-    int ret=rename("../touch.txt","../hello.txt");
-    if(ret>=0){
-        printf("rename sucess");
-    }
-    char buf[100];
-    char *ret1=getcwd(buf,100);
-    printf("%s",buf);
-//    printf("%s",ret);
-}
-
-/**
- * 目录操作
- * mkdir
- * rmdir
- */
-void main4(){
-    int ret=mkdir("../test",0644);
-    if(ret>=0){
-        printf("sucess mkdir");
-    } else{
-        printf("error mkdir");
-        return;
-    }
-    sleep(3);
-    int ret2=rmdir("../test");
-    if(ret2>=0){
-        printf("sucess rmdir");
-    } else{
-        printf("error rmdir");
-        return;
-    }
-}
-/**
- * 打开目录
- * opendir，readdir
- */
-void main5(){
-    DIR* dirname=opendir("../test");
-    struct dirent * ret=readdir(dirname);
-    printf("%s",ret->d_name);
-    closedir(dirname);
-}
-
-/**
- * 递归遍历目录
- */
-/* dirwalk: apply fcn to all files in dir */
-#define MAX_PATH 1024
-void dirwalk(char *dir, void (*fcn)(char *))
-{
-    char name[MAX_PATH];
-    struct dirent *dp;
-    DIR *dfd;
-    if ((dfd = opendir(dir)) == NULL) {
-        fprintf(stderr, "dirwalk: can't open %s\n", dir);
-        return;
-    }
-    while ((dp = readdir(dfd)) != NULL) {
-        if (strcmp(dp->d_name, ".") == 0
-            || strcmp(dp->d_name, "..") == 0)
-            continue; /* skip self and parent */
-        if (strlen(dir)+strlen(dp->d_name)+2 > sizeof(name))
-            fprintf(stderr, "dirwalk: name %s %s too long\n",
-                    dir, dp->d_name);
-        else {
-            sprintf(name, "%s/%s", dir, dp->d_name);
-            (*fcn)(name);
-        }
-    }
-    closedir(dfd);
-}
-/* fsize: print the size and name of file "name" */
-void fsize(char *name)
-{
-    struct stat stbuf;
-    if (stat(name, &stbuf) == -1) {
-        fprintf(stderr, "fsize: can't access %s\n", name);
-        return;
-    }
-    if ((stbuf.st_mode & S_IFMT) == S_IFDIR)
-        dirwalk(name, fsize);
-    printf("%8ld %s\n", stbuf.st_size, name);
-}
-void main6(){
-    fsize("../test");
+    char *const ps_argv[] ={"ps", "-o", "pid,ppid,pgrp,session,tpgid,comm", NULL};
+    char *const ps_envp[] ={"PATH=/bin:/usr/bin", "TERM=console", NULL};
+    execl("/bin/ps", "ps", "-o", "pid,ppid,pgrp,session,tpgid,comm", NULL);
+    execv("/bin/ps", ps_argv);
+    execle("/bin/ps", "ps", "-o", "pid,ppid,pgrp,session,tpgid,comm", NULL, ps_envp);
+    execve("/bin/ps", ps_argv, ps_envp);
+    execlp("ps", "ps", "-o", "pid,ppid,pgrp,session,tpgid,comm", NULL);
+    execvp("ps", ps_argv);
 }
 int main(){
-    main6();
+    main3();
     return 0;
 }
