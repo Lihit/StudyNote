@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/wenshao/StudyNote/C++Learning/CppLearning/main.cpp
+C:/StudyNote/C++Learning/CppLearning/main.cpp
 iostream
+-
+functional
 -
 

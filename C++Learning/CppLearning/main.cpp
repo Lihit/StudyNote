@@ -1,31 +1,34 @@
 #include <iostream>
+#include <functional>
+
 using namespace std;
 
-//c++检测右值内存有实体，自动转换为左值
-//c　语言不会把右值转为左值
-//c++全局变量和静态全局变量没有声明和定义的区别
-//c++是强类型系统　函数返回值必须有类型
-int a;
-//int a;
-static int b;
-void main1(){
-    int a=3;
-    (a=3)=4;
-    cout<<a<<endl;
-    int b=5;
-    (++b)++;
-    cout<<b<<endl;
-    (a>b?a:b)=100;
-    cout<<b<<endl;
-    //c++的register可以取地址
-    register int num=0;//寄存器的变量
-    cout<<&num<<endl;
-}
-//c++编译器　变异的宽泛
-//为了修改源代码　后面留下拓展
-//站位　站位参数
-void test(int a,double,int){
+//函数包装器 T是数据类型 F是函数
+//作用：
+//第一，设计执行接口，接口设计关卡，计数
+//第二，函数包装器依赖于函数模板适用于通用模型
+//第三，函数代码可以嵌套在另外一个函数，实现代码增值
+//函数包装器可以用于管理内嵌函数，外部函数调用
+template <typename T,typename F>
+T run(T v,F f){
+    static int count=0;
+    count++;
+    cout<<"执行 "<<count<<endl;
+    if(count>1){
+        T vx(0);
+        return vx;
+    }
+    return f(v);
+};
 
+int test(int d){
+    return d+100;
+}
+void main1(){
+    double db=12.9;
+    function<double(double)> fun1=[](double u){return 2*u;};//c++的新语法
+    cout<<run(db,fun1)<<endl;
+    cout<<run(12,test)<<endl;
 }
 int main(){
     main1();
