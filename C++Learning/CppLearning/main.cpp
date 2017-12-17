@@ -1,35 +1,28 @@
 #include <iostream>
-#include <functional>
-
+#include <thread>
+#include <windows.h>
+#include <vector>
+#include <assert.h>
 using namespace std;
-
-//函数包装器 T是数据类型 F是函数
-//作用：
-//第一，设计执行接口，接口设计关卡，计数
-//第二，函数包装器依赖于函数模板适用于通用模型
-//第三，函数代码可以嵌套在另外一个函数，实现代码增值
-//函数包装器可以用于管理内嵌函数，外部函数调用
-template <typename T,typename F>
-T run(T v,F f){
-    static int count=0;
-    count++;
-    cout<<"执行 "<<count<<endl;
-    if(count>1){
-        T vx(0);
-        return vx;
-    }
-    return f(v);
-};
-
-int test(int d){
-    return d+100;
-}
+//union本质也是一个类 可以在内部有函数
+//union 内部数据是共享的 不同对象之间是独立的 代码是共享
+//某些节约内存的类可以使用union
+//union不可以继承
 void main1(){
-    double db=12.9;
-    function<double(double)> fun1=[](double u){return 2*u;};//c++的新语法
-    cout<<run(db,fun1)<<endl;
-    cout<<run(12,test)<<endl;
+
 }
+
+//面向过程的模式
+//代码重用主要靠函数
+//权限的问题
+
+
+//c++面向对象模式（数据和代码合为一体）
+//类的继承实现了代码重用
+//类的封装实现了权限
+//类的多态实现一个接口根据需要完成多种功能
+//封装可以实现代码的权限，不可以随便调用
+//也可以锁定数据的权限，不可以被随便修改
 int main(){
     main1();
     return 0;
