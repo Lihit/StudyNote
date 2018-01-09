@@ -46,6 +46,10 @@ void main3(){
     execlp("ps", "ps", "-o", "pid,ppid,pgrp,session,tpgid,comm", NULL);
     execvp("ps", ps_argv);
 }
+class tmp{
+public:
+    virtual int f(int);
+};
 int main(){
     main3();
     return 0;

@@ -87,6 +87,9 @@
 		<Unit filename="/home/wenshao/StudyNote/C++Learning/CppLearning/main.cpp">
 			<Option target="CppLearning"/>
 		</Unit>
+		<Unit filename="/home/wenshao/StudyNote/C++Learning/CppLearning/test.h">
+			<Option target="CppLearning"/>
+		</Unit>
 		<Unit filename="/home/wenshao/StudyNote/C++Learning/CppLearning/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

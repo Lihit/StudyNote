@@ -4,4 +4,4 @@ project(CppLearning)
 set(CMAKE_CXX_STANDARD 11)
 
 set(SOURCE_FILES main.cpp)
-add_executable(CppLearning ${SOURCE_FILES})
+add_executable(CppLearning ${SOURCE_FILES} test.h)

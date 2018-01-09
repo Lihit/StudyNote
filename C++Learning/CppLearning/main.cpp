@@ -1,33 +1,56 @@
 #include <iostream>
+//类模板的成员函数没有实例化，不会自动找到他，需要手动包含
+
 using namespace std;
+//类模板可以有默认值
+//但是需要加上<>
 
-//c++检测右值内存有实体，自动转换为左值
-//c　语言不会把右值转为左值
-//c++全局变量和静态全局变量没有声明和定义的区别
-//c++是强类型系统　函数返回值必须有类型
-int a;
-//int a;
-static int b;
-void main1(){
-    int a=3;
-    (a=3)=4;
-    cout<<a<<endl;
-    int b=5;
-    (++b)++;
-    cout<<b<<endl;
-    (a>b?a:b)=100;
-    cout<<b<<endl;
-    //c++的register可以取地址
-    register int num=0;//寄存器的变量
-    cout<<&num<<endl;
+//编译系统检查出来的语法错误，导致程序运行结果不正确的逻辑错误，都不属于异常的范围
+//异常是指一个可以正确运行的程序再运行中可能会发生的错误
+
+//标识错误的类型
+class wrong{
+
+};
+//Ｃ语言的异常
+int intdiv(int a,int b){
+    try {
+        if(b==0){
+            throw wrong();
+        }
+        else if(b==10){
+            throw "b==10是不对的";
+        }
+        return a/b;
+    }catch (wrong){
+        cout<<"除法异常已经处理"<<endl;
+        return -1;
+    }catch (const char * e){
+        cout<<e<<endl;
+    }
 }
-//c++编译器　变异的宽泛
-//为了修改源代码　后面留下拓展
-//站位　站位参数
-void test(int a,double,int){
-
+//面向对象的异常
+class myArray{
+public:
+    int *p;
+    myArray(int num){
+        p=new int[num];
+        if(num<0){
+            throw wrong();
+        }
+        for (int i = 0; i <num ; ++i) {
+            p[i]=0;
+        }
+    }
+};
+int main1(){
+    try{
+        myArray ma(-10);
+    }catch (wrong){
+        cout<<"数组长度应该大于０"<<endl;
+    }
 }
 int main(){
-    main1();
+    int ret=intdiv(10,10);
     return 0;
 }
