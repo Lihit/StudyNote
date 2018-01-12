@@ -13,7 +13,7 @@ public:
     /* widget's event handler (all event) */
     bool event(QEvent *);
 
-    void mousePressEvent1(QMouseEvent *);
+    void mousePressEvent(QMouseEvent *);
     void mouseReleaseEvent(QMouseEvent *);
     void mouseMoveEvent(QMouseEvent *);
     /* 不要用 */

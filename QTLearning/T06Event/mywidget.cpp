@@ -61,7 +61,7 @@ void MyWidget::paintEvent(QPaintEvent *)
 
 }
 
-void MyWidget::mousePressEvent1(QMouseEvent *ev)
+void MyWidget::mousePressEvent(QMouseEvent *ev)
 {
 #if 0
     QPoint pt = ev->pos();
