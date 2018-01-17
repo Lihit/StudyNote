@@ -1,52 +1,34 @@
 #include <iostream>
-#include <bitset>
-#include <unordered_map>
 #include <vector>
-
+#include <unordered_set>
+#include <set>
 using namespace std;
 
-class Solution {
-public:
-    /**
-     * @param nums: A list of integers.
-     * @return: An integer denotes the middle number of the array.
-     */
-    int median(vector<int> &nums) {
-        if (nums.empty()) return 0;
+bool wordBreak(string s, unordered_set<string> &dict) {
+    int begin = 0, end = 0;
+    string word;
+    bool words[s.size()+1] = {0};
+    words[0] = true;
 
-        int len = nums.size();
-        return helper(nums, 0, len - 1, (len + 1) / 2);
-    }
-
-private:
-    int helper(vector<int> &nums, int l, int u, int size) {
-        // if (l >= u) return nums[u];
-
-        int m = l; // index m to track pivot
-        for (int i = l + 1; i <= u; ++i) {
-            if (nums[i] < nums[l]) {
-                ++m;
-                int temp = nums[i];
-                nums[i] = nums[m];
-                nums[m] = temp;
-            }
-        }
-
-        // swap with the pivot
-        int temp = nums[m];
-        nums[m] = nums[l];
-        nums[l] = temp;
-
-        if (m - l + 1 == size) {
-            return nums[m];
-        } else if (m - l + 1 > size) {
-            return helper(nums, l, m - 1, size);
-        } else {
-            return helper(nums, m + 1, u, size - (m - l + 1));
+    for (int i = 1; i < s.size() + 1; i++) {
+        words[i] = false;
+        for (end = 0; end < s.size(); end++) {
+            for(begin = 0; begin <= end; begin++)
+                if (words[begin] && dict.find( s.substr(begin, end-begin+1) )
+                                    != dict.end()) {
+                    words[end + 1] = true;
+                    break;
+                }
         }
     }
-};
 
-int main(){
-
+    return words[s.size()];
+}
+int main(int argc, char const *argv[])
+{
+    string s="iloveapplephone";
+    unordered_set<string> dict={"apple","phone","i","love","hello","world"};
+    bool ret=wordBreak(s,dict);
+    cout<<ret<<endl;
+    return 0;
 }
