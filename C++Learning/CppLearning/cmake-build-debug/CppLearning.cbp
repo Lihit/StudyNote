@@ -85,7 +85,14 @@
 		<Unit filename="C:/StudyNote/C++Learning/CppLearning/main.cpp">
 			<Option target="CppLearning"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="C:/StudyNote/C++Learning/CppLearning/CMakeLists.txt">
+=======
+		<Unit filename="/home/wenshao/StudyNote/C++Learning/CppLearning/test.h">
+			<Option target="CppLearning"/>
+		</Unit>
+		<Unit filename="/home/wenshao/StudyNote/C++Learning/CppLearning/CMakeLists.txt">
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

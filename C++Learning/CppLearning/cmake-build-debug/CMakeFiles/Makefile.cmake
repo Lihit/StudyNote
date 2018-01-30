@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "MinGW Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+<<<<<<< HEAD
   "C:/JetBrain/CLion 2017.1.2/bin/cmake/share/cmake-3.7/Modules/CMakeCInformation.cmake"
   "C:/JetBrain/CLion 2017.1.2/bin/cmake/share/cmake-3.7/Modules/CMakeCXXInformation.cmake"
   "C:/JetBrain/CLion 2017.1.2/bin/cmake/share/cmake-3.7/Modules/CMakeCommonLanguageInclude.cmake"
@@ -34,6 +35,30 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.7.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.7.2/CMakeRCCompiler.cmake"
   "CMakeFiles/3.7.2/CMakeSystem.cmake"
+=======
+  "/home/wenshao/JetBrains/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeCInformation.cmake"
+  "/home/wenshao/JetBrains/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeCXXInformation.cmake"
+  "/home/wenshao/JetBrains/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake"
+  "/home/wenshao/JetBrains/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
+  "/home/wenshao/JetBrains/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeFindCodeBlocks.cmake"
+  "/home/wenshao/JetBrains/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeGenericSystem.cmake"
+  "/home/wenshao/JetBrains/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake"
+  "/home/wenshao/JetBrains/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake"
+  "/home/wenshao/JetBrains/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/home/wenshao/JetBrains/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/Compiler/GNU-C.cmake"
+  "/home/wenshao/JetBrains/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/Compiler/GNU-CXX.cmake"
+  "/home/wenshao/JetBrains/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/Compiler/GNU.cmake"
+  "/home/wenshao/JetBrains/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/Platform/Linux-GNU-C.cmake"
+  "/home/wenshao/JetBrains/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/Platform/Linux-GNU-CXX.cmake"
+  "/home/wenshao/JetBrains/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/Platform/Linux-GNU.cmake"
+  "/home/wenshao/JetBrains/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/Platform/Linux.cmake"
+  "/home/wenshao/JetBrains/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/Platform/UnixPaths.cmake"
+  "/home/wenshao/JetBrains/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/ProcessorCount.cmake"
+  "../CMakeLists.txt"
+  "CMakeFiles/3.6.2/CMakeCCompiler.cmake"
+  "CMakeFiles/3.6.2/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.6.2/CMakeSystem.cmake"
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
   )
 
 # The corresponding makefile is:

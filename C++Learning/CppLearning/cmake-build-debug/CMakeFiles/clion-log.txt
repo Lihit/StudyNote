@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 "C:\JetBrain\CLion 2017.1.2\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\StudyNote\C++Learning\CppLearning
+=======
+/home/wenshao/JetBrains/clion-2016.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/wenshao/StudyNote/C++Learning/CppLearning
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/StudyNote/C++Learning/CppLearning/cmake-build-debug

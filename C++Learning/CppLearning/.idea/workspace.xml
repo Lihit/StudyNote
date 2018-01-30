@@ -29,19 +29,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="63">
               <caret line="13" column="2" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="53" selection-end-column="1" />
               <folding>
                 <element signature="e#491#510#0" expanded="true" />
                 <element signature="e#676#691#0" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="636">
+              <caret line="49" column="32" lean-forward="false" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+              <folding />
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="22-类模板.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/22-类模板.cpp">
           <provider selected="true" editor-type-id="text-editor">
@@ -51,30 +58,55 @@
                 <element signature="e#533#552#0" expanded="true" />
                 <element signature="e#718#733#0" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="纯虚函数和抽象类.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/纯虚函数和抽象类.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+              <folding />
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="21-静态成员函数成员变量类在内存的存储默认参数.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/21-静态成员函数成员变量类在内存的存储默认参数.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2079">
               <caret line="77" column="15" lean-forward="false" selection-start-line="77" selection-start-column="15" selection-end-line="77" selection-end-column="15" />
+=======
+      <file leaf-file-name="15-虚函数.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/15-虚函数.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="20-类和内存的关系.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/20-类和内存的关系.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4428">
               <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+=======
+      <file leaf-file-name="14-类与类指针父类子类交错.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/14-类与类指针父类子类交错.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2046">
+              <caret line="93" column="42" lean-forward="false" selection-start-line="93" selection-start-column="42" selection-end-line="93" selection-end-column="42" />
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="19-构造函数和析构函数.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/19-构造函数和析构函数.cpp">
           <provider selected="true" editor-type-id="text-editor">
@@ -83,6 +115,24 @@
               <folding>
                 <element signature="e#44#63#0" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="13-静态联编和动态联编.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/13-静态联编和动态联编.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1078">
+              <caret line="49" column="1" lean-forward="false" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="12-类的类型转换.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/12-类的类型转换.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2068">
+              <caret line="94" column="1" lean-forward="false" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
+              <folding />
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
             </state>
           </provider>
         </entry>
@@ -136,11 +186,19 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
               <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+=======
+      <file leaf-file-name="8-c和cpp的一些不同.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/8-c和cpp的一些不同.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
               <folding />
             </state>
           </provider>
@@ -161,6 +219,7 @@
         <option value="$PROJECT_DIR$/6-左值引用和右值引用.cpp" />
         <option value="$PROJECT_DIR$/7-自动变量auto.cpp" />
         <option value="$PROJECT_DIR$/8-c和cpp的一些不同.cpp" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/cpp的指针转换.cpp" />
         <option value="$PROJECT_DIR$/9-cpp的指针转换.cpp" />
         <option value="$PROJECT_DIR$/10-cpp的一些新用法.cpp.cpp" />
@@ -178,6 +237,18 @@
         <option value="$PROJECT_DIR$/21-静态成员函数成员变量类在内存的存储默认参数.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/22-类模板.cpp" />
+=======
+        <option value="$PROJECT_DIR$/9-友元类和友元函数.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/10-类的ｃｏｎｓｔ对象和nullptr.cpp" />
+        <option value="$PROJECT_DIR$/11-类的指针和引用.cpp" />
+        <option value="$PROJECT_DIR$/12-类的类型转换.cpp" />
+        <option value="$PROJECT_DIR$/13-静态联编和动态联编.cpp" />
+        <option value="$PROJECT_DIR$/14-类与类指针父类子类交错.cpp" />
+        <option value="$PROJECT_DIR$/15-虚函数.cpp" />
+        <option value="$PROJECT_DIR$/纯虚函数和抽象类.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
       </list>
     </option>
   </component>
@@ -188,9 +259,16 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1032" />
+=======
+    <option name="x" value="1002" />
+    <option name="y" value="54" />
+    <option name="width" value="905" />
+    <option name="height" value="1026" />
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -228,6 +306,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
+<<<<<<< HEAD
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -248,6 +327,9 @@
       <envs />
       <method />
     </configuration>
+=======
+  <component name="RunManager" selected="Application.CppLearning">
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CppLearning" TARGET_NAME="CppLearning" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
@@ -477,6 +559,7 @@
       <workItem from="1511844423012" duration="40000" />
       <workItem from="1511922672519" duration="5292000" />
       <workItem from="1511928214598" duration="9000" />
+<<<<<<< HEAD
       <workItem from="1512437420245" duration="5897000" />
       <workItem from="1512534598593" duration="11000" />
       <workItem from="1512793606188" duration="3355000" />
@@ -490,11 +573,25 @@
       <workItem from="1514002772116" duration="608000" />
       <workItem from="1514165105351" duration="5095000" />
       <workItem from="1514942516062" duration="4538000" />
+=======
+      <workItem from="1514267362285" duration="3818000" />
+      <workItem from="1514511471128" duration="6132000" />
+      <workItem from="1514531047102" duration="7459000" />
+      <workItem from="1514599711288" duration="3426000" />
+      <workItem from="1514684432408" duration="906000" />
+      <workItem from="1514771444207" duration="8144000" />
+      <workItem from="1514857031362" duration="5321000" />
+      <workItem from="1515460395428" duration="6340000" />
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="75372000" />
+=======
+    <option name="totallyTimeSpent" value="75009000" />
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -506,6 +603,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="960" y="0" width="960" height="1032" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -521,6 +619,22 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+    <frame x="1002" y="54" width="905" height="1026" extended-state="4" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08730159" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2628205" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17526881" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26666668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -537,11 +651,12 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2354">
@@ -571,6 +686,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/newtest.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
         </state>
       </provider>
     </entry>
@@ -584,6 +705,7 @@
     <entry file="file://$PROJECT_DIR$/2-字符串输入输出.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
+<<<<<<< HEAD
           <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
@@ -623,10 +745,16 @@
           <folding>
             <element signature="e#491#510#0" expanded="true" />
             <element signature="e#676#691#0" expanded="true" />
+=======
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/2-字符串输入输出.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -634,6 +762,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
     <entry file="file://$PROJECT_DIR$/1-系统输入输出流.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2178">
@@ -790,6 +920,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/9-cpp的指针转换.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1053">
@@ -798,6 +929,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/10-cpp的一些新用法.cpp.cpp">
+=======
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/1.txt">
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
@@ -825,7 +959,14 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward/auto_ptr.h">
+=======
+    <entry file="file://$PROJECT_DIR$/newtest.txt">
+      <provider editor-type-id="LargeFileEditor">
+        <state />
+      </provider>
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="295" column="4" lean-forward="false" selection-start-line="295" selection-start-column="4" selection-end-line="295" selection-end-column="4" />
@@ -847,17 +988,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/11-函数包装器.cpp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1053">
           <caret line="39" column="1" lean-forward="false" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
           <folding>
             <element signature="e#43#62#0" expanded="true" />
             <element signature="e#243#266#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="1650">
+          <caret line="75" column="14" lean-forward="false" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
         </state>
       </provider>
     </entry>
     <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/thread">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="145">
           <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
         </state>
@@ -870,6 +1017,54 @@
           <folding>
             <element signature="e#44#63#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="1540">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wenben.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.h" />
+    <entry file="file://$PROJECT_DIR$/11-类的指针和引用.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2156">
+          <caret line="98" column="1" lean-forward="false" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-类的ｃｏｎｓｔ对象和nullptr.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="51" column="1" lean-forward="false" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9-友元类和友元函数.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5-函数默认参数和函数重载的问题.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
         </state>
       </provider>
     </entry>
@@ -881,6 +1076,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/17-宏定义字符和断言调试.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1215">
@@ -892,6 +1088,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/18-c++的结构体.cpp">
+=======
+    <entry file="file://$PROJECT_DIR$/3-文件流的输入输出.cpp">
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="30" column="2" lean-forward="false" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
@@ -911,18 +1110,72 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/20-类和内存的关系.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4428">
           <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/8-c和cpp的一些不同.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/21-静态成员函数成员变量类在内存的存储默认参数.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2079">
           <caret line="77" column="15" lean-forward="false" selection-start-line="77" selection-start-column="15" selection-end-line="77" selection-end-column="15" />
+=======
+    <entry file="file://$PROJECT_DIR$/12-类的类型转换.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2068">
+          <caret line="94" column="1" lean-forward="false" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13-静态联编和动态联编.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1078">
+          <caret line="49" column="1" lean-forward="false" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14-类与类指针父类子类交错.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2046">
+          <caret line="93" column="42" lean-forward="false" selection-start-line="93" selection-start-column="42" selection-end-line="93" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15-虚函数.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/纯虚函数和抽象类.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="49" column="32" lean-forward="false" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+>>>>>>> e8dc5dcdc524676ecd48f38c553aff68985a1bba
           <folding />
         </state>
       </provider>
