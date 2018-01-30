@@ -1,0 +1,14 @@
+INPUT(
+./debug\MyWidget.o
+./debug\TcpClient.o
+./debug\TcpServer.o
+./debug\ChooseInterface.o
+./debug\udp1.o
+./debug\udp2.o
+./debug\moc_MyWidget.o
+./debug\moc_TcpClient.o
+./debug\moc_TcpServer.o
+./debug\moc_ChooseInterface.o
+./debug\moc_udp1.o
+./debug\moc_udp2.o
+);

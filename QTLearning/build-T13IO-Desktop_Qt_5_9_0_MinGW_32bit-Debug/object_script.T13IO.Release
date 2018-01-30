@@ -1,0 +1,14 @@
+INPUT(
+./release\MyWidget.o
+./release\TcpClient.o
+./release\TcpServer.o
+./release\ChooseInterface.o
+./release\udp1.o
+./release\udp2.o
+./release\moc_MyWidget.o
+./release\moc_TcpClient.o
+./release\moc_TcpServer.o
+./release\moc_ChooseInterface.o
+./release\moc_udp1.o
+./release\moc_udp2.o
+);
