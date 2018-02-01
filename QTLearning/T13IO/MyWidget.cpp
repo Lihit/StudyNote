@@ -23,14 +23,14 @@
 MyWidget::MyWidget(QWidget *parent) :
     QWidget(parent)
 {
-    QFile file("../MyTest.txt");
-    file.open(QIODevice::ReadWrite);
+//    QFile file("../MyTest.txt");
+//    file.open(QIODevice::ReadWrite);
 
-    file.write(QByteArray("温少国"));
-    // file.seek
-   // file.write()
+//    file.write(QByteArray("温少国"));
+//    // file.seek
+//   // file.write()
 
-    file.close();
+//    file.close();
 
 #if 0
     QBuffer buffer;
@@ -140,23 +140,20 @@ int main(int argc, char** argv)
 {
     QApplication app(argc, argv);
 
-#if 0
   //  MyWidget w;
   //  w.show();
-    TcpServer s; s.show();
-    TcpClient c; c.show();
-    s.setWindowTitle("server");
-    c.setWindowTitle("client");
-#endif
+//    TcpServer s; s.show();
+//    TcpClient c; c.show();
+//    s.setWindowTitle("server");
+//    c.setWindowTitle("client");
 
-#if 0
     Udp1 udp1; udp1.show();
     Udp2 udp2; udp2.show();
     udp1.setWindowTitle("udp1");
     udp2.setWindowTitle("udp2");
-#endif
-    MyWidget w;
-    w.show();
+
+//    MyWidget w;
+//    w.show();
     return app.exec();
 
 }
