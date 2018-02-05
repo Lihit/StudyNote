@@ -1,0 +1,15 @@
+INPUT(
+./debug\Widget01.o
+./debug\main.o
+./debug\Widget02.o
+./debug\Widget03.o
+./debug\Widget04.o
+./debug\Contact.o
+./debug\Widget05.o
+./debug\moc_Widget01.o
+./debug\moc_Widget02.o
+./debug\moc_Widget03.o
+./debug\moc_Widget04.o
+./debug\moc_Contact.o
+./debug\moc_Widget05.o
+);

@@ -1,0 +1,15 @@
+INPUT(
+./release\Widget01.o
+./release\main.o
+./release\Widget02.o
+./release\Widget03.o
+./release\Widget04.o
+./release\Contact.o
+./release\Widget05.o
+./release\moc_Widget01.o
+./release\moc_Widget02.o
+./release\moc_Widget03.o
+./release\moc_Widget04.o
+./release\moc_Contact.o
+./release\moc_Widget05.o
+);
