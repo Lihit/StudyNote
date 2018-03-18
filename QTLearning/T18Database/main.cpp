@@ -37,7 +37,7 @@ int main(int argc, char*argv[])
 //        qDebug()<<values;
 //        b=query.next();
 //    }
-    Widget04 w4;
-    w4.show();
+    Contact tcon;
+    tcon.show();
     return app.exec();
 }
